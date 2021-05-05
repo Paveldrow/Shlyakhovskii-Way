@@ -1,0 +1,25 @@
+.button-menu{
+  display: none;
+  width: 75px;
+  height: 50px;
+  padding: 0;
+  background-image: url("../../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $accent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+    outline: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 50px;
+  }
+}

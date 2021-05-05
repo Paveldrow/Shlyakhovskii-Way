@@ -1,0 +1,38 @@
+.main-block {
+  min-height: 860px;
+  padding-top: 185px;
+  background-image: url('../../img/background-main-block.jpg');
+
+  @media (max-width: $tablet-width) {
+    min-height: 344px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 320px;
+  }
+}
+
+.main-block__title {
+  width: 412px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 433px;
+  color: $white;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.1px;
+
+  @media (max-width: $tablet-width) {
+    width: 398px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 294px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

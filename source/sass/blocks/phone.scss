@@ -1,0 +1,26 @@
+.phone {
+display: flex;
+align-items: center;
+  color: $true-dark;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  &:hover .phone__icon,
+  &:focus .phone__icon {
+    stroke: $accent;
+  }
+}
+
+.phone--header {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.phone__icon {
+  stroke: $true-dark;
+}
+
