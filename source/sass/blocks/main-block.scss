@@ -1,22 +1,48 @@
 .main-block {
+  box-sizing: border-box;
   min-height: 860px;
   padding-top: 185px;
-  background-image: url('../../img/background-main-block.jpg');
+  background-image: url('../../img/background-main-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+
+@media (min-resolution: 2dppx) {
+  background-image: url('../../img/background-main-desktop@2x.jpg');
+}
 
   @media (max-width: $tablet-width) {
-    min-height: 344px;
+    min-height: 483px;
+    padding-top: 60px;
+    background-image: url('../../img/background-main-tablet.jpg');
+    background-size: cover;
+    background-position: center bottom -10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-main-tablet@2x.jpg');
+    }
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 455px;
+    padding-top: 81px;
+    background-image: url('../../img/background-main-mobile.jpg');
+    background-size: 100%;
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background-main-mobile@2x.jpg');
+    }
   }
 }
 
 .main-block__title {
   width: 412px;
   margin: 0;
-  margin-left: auto;
-  margin-right: 433px;
+  margin-bottom: 30px;
+  margin-left: 60%;
   color: $white;
   font-weight: 600;
   font-size: 55px;
@@ -26,13 +52,54 @@
   @media (max-width: $tablet-width) {
     width: 398px;
     margin: 0 auto;
+    margin-bottom: 15px;
     font-size: 30px;
     line-height: 45px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 294px;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
     font-size: 24px;
     line-height: 36px;
+  }
+}
+
+.main-block__wrapper {
+  width: 340px;
+  margin-left: 60%;
+
+  @media (max-width: $tablet-width) {
+    width: 398px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: flex-end;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: $white;
+  }
+}
+
+.main-block__text {
+  margin: 0;
+  margin-bottom: 114px;
+  color: $white;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    color: $dark;
+    margin-bottom: 20px;
   }
 }

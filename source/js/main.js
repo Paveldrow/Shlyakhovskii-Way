@@ -8,4 +8,5 @@ bodyElement.classList.remove('no-js');
 
 buttonMenuElement.addEventListener('click', () => {
   menuElement.classList.toggle('main-nav--opened');
+  buttonMenuElement.classList.toggle('button-menu--close');
 });
