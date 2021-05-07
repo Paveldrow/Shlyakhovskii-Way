@@ -1,0 +1,142 @@
+.places {
+  width: 80%;
+  max-width: 1159px;
+  margin: 0 auto;
+  padding-left: 21px;
+  padding-right: 21px;
+
+  @media (min-width: $mobile-width) {
+    width: auto;
+    max-width: none;
+  }
+}
+
+.places__title {
+  position: relative;
+  text-align: center;
+  width: 358px;
+  padding-bottom: 34px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.2px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 224px;
+    height: 4px;
+    background-color: $accent;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.places__description {
+  width: 328px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+
+  @media (max-width: $desktop-width) {
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    color: rgba(44, 46, 63, 0.7);
+  }
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.places__item {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 101px;
+
+  @media (min-width: 1312px) {
+    &:nth-child(4) {
+      margin-right: 120px;
+    }
+
+    &:nth-child(5) {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+
+  &:hover .places__item-overlay {
+    display: flex;
+  }
+}
+
+.places__item-overlay {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 21, 23, 0.6);
+  z-index: 2;
+}
+
+.places__link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 266px;
+  height: 77px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+}
+
+.places__img {
+  display: block;
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.places__item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 215px;
+  height: 61px;
+  background-color: $white;
+}
