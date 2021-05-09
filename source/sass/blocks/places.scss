@@ -5,37 +5,41 @@
   padding-left: 21px;
   padding-right: 21px;
 
-  @media (min-width: $mobile-width) {
-    width: auto;
-    max-width: none;
+  @media (max-width: $tablet-width) {
   }
 }
 
 .places__title {
   position: relative;
-  text-align: center;
   width: 358px;
   padding-bottom: 34px;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.2px;
+  color: $dark;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 224px;
-    height: 4px;
-    background-color: $accent;
-  }
-
-  @media (max-width: $desktop-width) {
-    width: auto;
-    text-align: center;
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
     font-size: 30px;
     line-height: 45px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-only) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 224px;
+      height: 4px;
+      background-color: $accent;
+    }
   }
 }
 
@@ -44,21 +48,18 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.5px;
+  color: rgba($dark, 0.7);
 
-  @media (max-width: $desktop-width) {
-    width: auto;
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
     text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.5px;
-    color: rgba(44, 46, 63, 0.7);
   }
 }
 
 .places__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -66,21 +67,29 @@
 
 .places__item {
   position: relative;
-  margin: 0 auto;
   margin-bottom: 101px;
 
-  @media (min-width: 1312px) {
+  &:nth-child(4) {
+    margin-left: auto;
+  }
+
+  &:nth-child(5) {
+    margin-right: auto;
+    margin-left: 120px;
+  }
+
+  @media (max-width: 1312px) {
     &:nth-child(4) {
-      margin-right: 120px;
+      margin-left: 0;
     }
 
     &:nth-child(5) {
-      margin-left: 0;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 auto;
     margin-bottom: 19px;
   }
 
@@ -96,14 +105,14 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: rgba(20, 21, 23, 0.6);
+  background: rgba($true-dark, 0.6);
   z-index: 2;
 }
 
 .places__link {
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
   width: 266px;
   height: 77px;
   text-transform: uppercase;
@@ -112,7 +121,7 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba($white, 0.7);
   box-sizing: border-box;
 }
 
@@ -138,5 +147,10 @@
   margin: 0 auto;
   width: 215px;
   height: 61px;
+  color: $dark;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.5px;
   background-color: $white;
 }

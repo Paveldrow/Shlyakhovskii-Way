@@ -79,14 +79,15 @@ align-items: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
+  color: $true-dark;
 }
 
 .page-footer__text {
   margin: 0;
-  color: $footer-text;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  color: rgba($true-dark, 0.5);
 
   @media (max-width: $tablet-width) {
     max-width: 726px;
