@@ -17,8 +17,8 @@
   }
 
   @media (max-width: $mobile-width) {
-flex-direction: column;
-align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -82,6 +82,31 @@ align-items: center;
   color: $true-dark;
 }
 
+.page-footer__contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+  color: $accent;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+
+  &--phone {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.page-footer__contact-icon {
+  margin-right: 15px;
+  stroke: $footer-decor;
+  fill: $footer-decor;
+}
+
 .page-footer__text {
   margin: 0;
   font-weight: 400;
@@ -94,4 +119,3 @@ align-items: center;
     margin: 0 auto;
   }
 }
-

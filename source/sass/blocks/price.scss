@@ -1,0 +1,95 @@
+.price {
+  display: flex;
+  width: 80%;
+  max-width: 1159px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    width: 726px;
+  }
+}
+
+.price__info {
+  order: 1;
+  width: 299px;
+
+  @media (max-width: $tablet-width) {
+    width: 726px;
+  }
+}
+
+.price__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 23px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $dark;
+
+  @media (min-width: $desktop-only) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 175px;
+      height: 3px;
+      background-color: $accent;
+    }
+  }
+}
+
+.price__description {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 27px;
+  color: rgba($dark, 0.7);
+}
+
+.price__contact-text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $true-dark;
+}
+
+.price__contact {
+  display: flex;
+  align-items: center;
+  color: $black;
+    font-size: 20px;
+    line-height: 32px;
+
+    @media (max-width: $tablet-width) {
+      justify-content: center;
+      color: $accent;
+    }
+}
+
+.price__contact-icon {
+  stroke: $accent;
+
+  @media (max-width: $tablet-width) {
+display: none;
+  }
+}
+
+.price__list {
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.price__item {
+  max-width: 370px;
+  margin-right: 28px;
+}

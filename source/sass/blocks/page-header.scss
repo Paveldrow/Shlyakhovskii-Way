@@ -27,3 +27,30 @@
     padding-bottom: 13px;
   }
 }
+
+
+.page-header__contact {
+  display: flex;
+  align-items: center;
+  color: $true-dark;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  &:hover .page-header__contact-icon,
+  &:focus .page-header__contact-icon {
+    stroke: $accent;
+  }
+}
+
+.page-header__contact-icon {
+  stroke:  $true-dark;;
+}

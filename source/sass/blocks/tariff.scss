@@ -1,0 +1,99 @@
+.tariff {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-top: 40px;
+  border-radius: 6px;
+  border: 1px solid rgba($dark, 0.3);
+
+  &:focus,
+  &:hover {
+    padding: 28px;
+    padding-top: 38px;
+    border: 3px solid $accent;
+  }
+
+  &:focus .tariff__title,
+  &:hover .tariff__title {
+    color: $accent;
+  }
+
+  &:focus .tariff__price,
+  &:hover .tariff__price {
+    color: $accent;
+  }
+
+  &:focus .tariff__description,
+  &:hover .tariff__description {
+    border-color: $accent;
+  }
+
+  &:focus .tariff__icon,
+  &:hover .tariff__icon {
+    fill: $accent;
+  }
+}
+
+.tariff__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.tariff__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.3px;
+  color: rgba($true-dark, 0.7);
+}
+
+.tariff__price {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: rgba($true-dark, 0.7);
+}
+
+.tariff__description {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark;
+  border-bottom: 1px solid rgba($dark, 0.3);
+}
+
+.tariff__list {
+  margin: 0;
+  margin-bottom: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tariff__icon {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.tariff__item {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 32px;
+  color: $dark;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.tariff__button {
+  display: block;
+  margin-top: auto;
+}
