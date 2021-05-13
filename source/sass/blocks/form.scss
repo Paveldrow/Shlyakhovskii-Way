@@ -1,0 +1,76 @@
+.form {
+  position: relative;
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: $accent;
+
+  &--popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__input {
+  font-family: inherit;
+  width: 269px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding-left: 17px;
+  padding-right: 26px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $true-dark;
+  border-radius: 0;
+  border: 1px solid rgba($dark, 0.3);
+
+  &--phone {
+    margin-right: 13px;
+    background-image: url('../../img/icon-required.svg');
+    background-repeat: no-repeat;
+    background-position: 15px 7px;
+  }
+
+  &--modal {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.form__input::placeholder {
+  color: inherit;
+}
+
+.form__input-invalid {
+  border-color: $accent;
+}
+
+.form__invalid-message {
+  position: absolute;
+  display: none;
+  top: -16px;
+}
+
+.form__input-invalid ~ .form__invalid-message {
+  display: block;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+}

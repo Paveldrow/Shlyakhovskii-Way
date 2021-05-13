@@ -1,3 +1,9 @@
-.main-list {
-  margin: 0;
+.page-main {
+  background-image: url("../../img/page-background.png");
+  background-repeat: no-repeat;
+  background-position: center 2587px;
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
 }

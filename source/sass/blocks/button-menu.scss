@@ -1,6 +1,6 @@
 .button-menu {
   display: none;
-  width: 75px;
+  width: 72px;
   height: 50px;
   padding: 0;
   background-image: url("../../img/menu.svg");
@@ -8,6 +8,7 @@
   background-position: center center;
   background-color: $accent;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -18,7 +19,7 @@
 
   &--close {
     position: absolute;
-    display: none;
+    display: block;
     right: 0;
     top: 0;
     background-image: url("../../img/menu-close.svg");

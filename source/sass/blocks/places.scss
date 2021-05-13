@@ -1,18 +1,9 @@
-.places {
-  width: 80%;
-  max-width: 1159px;
-  margin: 0 auto;
-  padding-left: 21px;
-  padding-right: 21px;
-
-  @media (max-width: $tablet-width) {
-  }
-}
-
 .places__title {
   position: relative;
   width: 358px;
-  padding-bottom: 34px;
+  margin: 0;
+  margin-bottom: 27px;
+  padding-bottom: 33px;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
@@ -21,12 +12,16 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
+    margin-bottom: 21px;
+    padding: 0;
     font-size: 30px;
     line-height: 45px;
     text-align: center;
+    letter-spacing: normal;
   }
 
   @media (max-width: $mobile-width) {
+    width: auto;
     font-size: 24px;
   }
 
@@ -36,7 +31,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 224px;
+      width: 228px;
       height: 4px;
       background-color: $accent;
     }
@@ -44,6 +39,8 @@
 }
 
 .places__description {
+  margin: 0;
+  margin-bottom: 54px;
   width: 328px;
   font-size: 16px;
   line-height: 28px;
@@ -51,7 +48,9 @@
   color: rgba($dark, 0.7);
 
   @media (max-width: $tablet-width) {
+    width: auto;
     margin: 0 auto;
+    margin-bottom: 39px;
     text-align: center;
   }
 }
@@ -59,38 +58,62 @@
 .places__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 1089px) {
+    width: 706px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    width: 288px;
+  }
 }
 
 .places__item {
   position: relative;
+  width: 350px;
+  height: 431px;
   margin-bottom: 101px;
+  background-color: $main-block-background;
 
-  &:nth-child(4) {
-    margin-left: auto;
+  @media (min-width: $desktop-only) {
+    &:nth-child(4) {
+      margin-left: auto;
+    }
+
+    &:nth-child(5) {
+      margin-right: auto;
+      margin-left: 120px;
+    }
   }
 
-  &:nth-child(5) {
-    margin-right: auto;
-    margin-left: 120px;
-  }
-
-  @media (max-width: 1312px) {
+  @media (max-width: 1089px) {
     &:nth-child(4) {
       margin-left: 0;
     }
 
     &:nth-child(5) {
-      margin-right: auto;
-      margin-left: auto;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
     margin-bottom: 19px;
+
+    &:nth-child(5) {
+      margin-top: 12px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &:hover .places__item-overlay {

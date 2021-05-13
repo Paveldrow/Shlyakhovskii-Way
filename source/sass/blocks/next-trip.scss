@@ -1,10 +1,19 @@
 .next-trip {
-  box-sizing: border-box;
-  padding-right: 39px;
-  width: 398px;
+  margin-right: 83px;
+  padding-left: 13px;
+  padding-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 50px;
+    padding: 0;
+    padding-right: 20px;
+  }
 
   @media (max-width: $mobile-width) {
+    width: auto;
+    text-align: center;
     padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -13,27 +22,41 @@
   justify-content: space-between;
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
 .next-trip__list {
+  min-width: 128px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (max-width: $mobile-width) {
     width: 50%;
-    text-align: center;
+    margin-bottom: 10px;
   }
 }
 
 .next-trip__item {
-  min-width: 95px;
+  margin-right: 28px;
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba($true-dark, 0.5);
+
+  @media (max-width: $tablet-width) {
+    margin-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    text-align: center;
+    // width: 130px;
+  }
+
+
 }

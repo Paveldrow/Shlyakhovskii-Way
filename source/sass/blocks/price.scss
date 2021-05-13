@@ -1,21 +1,23 @@
 .price {
   display: flex;
-  width: 80%;
-  max-width: 1159px;
-  margin: 0 auto;
+  margin-bottom: 138px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
-    width: 726px;
+    justify-content: center;
   }
 }
 
 .price__info {
   order: 1;
   width: 299px;
+  padding-top: 112px;
+
 
   @media (max-width: $tablet-width) {
-    width: 726px;
+    width: auto;
+    text-align: center;
+    order: 0;
   }
 }
 
@@ -23,7 +25,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
@@ -39,6 +41,15 @@
       height: 3px;
       background-color: $accent;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
   }
 }
 
@@ -64,20 +75,20 @@
   display: flex;
   align-items: center;
   color: $black;
-    font-size: 20px;
-    line-height: 32px;
+  font-size: 20px;
+  line-height: 32px;
 
-    @media (max-width: $tablet-width) {
-      justify-content: center;
-      color: $accent;
-    }
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    color: $accent;
+  }
 }
 
 .price__contact-icon {
   stroke: $accent;
 
   @media (max-width: $tablet-width) {
-display: none;
+    display: none;
   }
 }
 
@@ -87,9 +98,22 @@ display: none;
   margin-right: auto;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .price__item {
-  max-width: 370px;
   margin-right: 28px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }

@@ -1,19 +1,13 @@
 .page-footer {
   display: flex;
-  justify-content: center;
-  width: 80%;
-  max-width: 1159px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 9px;
+  justify-content: space-between;
+min-width: 1160px;
+  padding-top: 11px;
   padding-bottom: 75px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 1070px) {
     flex-wrap: wrap;
-    width: auto;
-    max-width: none;
-    margin-left: 21px;
-    margin-right: 21px;
+    justify-content: center;
   }
 
   @media (max-width: $mobile-width) {
@@ -26,16 +20,23 @@
   position: relative;
 
   &--contacts {
-    padding-right: 33px;
-    padding-left: 33px;
+    padding-right: 46px;
+
+    @media (max-width: $tablet-width) {
+      padding-right: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      border-top: 1px solid $footer-decor;
+    }
   }
 
   &--corporate {
-    box-sizing: border-box;
-    max-width: 370px;
-    padding-left: 49px;
+    max-width: 320px;
+    padding-left: 45px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: 1070px) {
       text-align: center;
       max-width: none;
       width: 100%;
@@ -46,11 +47,11 @@
     }
   }
 
-  @media (min-width: $desktop-only) {
+  @media (min-width: 1071px) {
     &:nth-child(-n + 2)::after {
       position: absolute;
       content: '';
-      right: 0;
+      right: 4px;
       top: 0;
       bottom: 0;
       width: 1px;
@@ -80,19 +81,28 @@
   font-size: 18px;
   line-height: 32px;
   color: $true-dark;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .page-footer__contact {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   color: $accent;
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: underline;
 
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
   @media (max-width: $mobile-width) {
     justify-content: center;
+    margin: 0 auto;
   }
 
   &--phone {
@@ -102,9 +112,13 @@
 }
 
 .page-footer__contact-icon {
-  margin-right: 15px;
+  margin-right: 16px;
   stroke: $footer-decor;
   fill: $footer-decor;
+
+  &--phone {
+    margin-right: 10px;
+  }
 }
 
 .page-footer__text {

@@ -1,0 +1,245 @@
+.country-info {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 237px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.country-info__county-list {
+  display: flex;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 79px;
+  padding: 0;
+  padding-bottom: 14px;
+  list-style: none;
+  border-bottom: 1px solid rgba($dark, 0.3);
+}
+
+.country-info__county-item {
+  margin-right: 99px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.country-info__county-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: rgba($dark, 0.3);
+
+  &--current {
+    color: $accent;
+  }
+}
+
+.country-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.country-info__item {
+  position: relative;
+  display: flex;
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.country-info__description-block {
+  box-sizing: border-box;
+  width: 470px;
+  padding-right: 100px;
+  padding-bottom: 16px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.country-info__title {
+  position: relative;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 17px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.2px;
+  color: $dark;
+
+  @media (min-width: $desktop-only) {
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 175px;
+      height: 3px;
+      background-color: $accent;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: normal;
+  }
+}
+
+.country-info__text {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: rgba($dark, 0.7);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.country-info__img {
+  width: 430px;
+  height: 596px;
+  background-color: $main-block-background;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.country-info__review-block {
+  position: absolute;
+  top: 114px;
+  right: 0;
+  width: 382px;
+  padding: 30px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  background-color: $white;
+
+  @media (max-width: $tablet-width) {
+    top: auto;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    width: 268px;
+    bottom: 0;
+    padding-bottom: 34px;
+  }
+}
+
+.country-info__review-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 13px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.7px;
+  color: $dark;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 68px;
+    height: 1px;
+    background-color: $accent;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+
+    &::after {
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.country-info__review {
+  margin: 0;
+}
+
+.country-info__review-text {
+  margin: 0;
+  margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgba($dark, 0.7);
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.country-info__review-author {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.country-info__review-img {
+  margin-right: 16px;
+  border-radius: 50%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.country-info__review-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: $dark;
+}

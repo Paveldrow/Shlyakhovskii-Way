@@ -1,0 +1,64 @@
+.questions {
+  min-height: 455px;
+  margin-bottom: 89px;
+  padding-top: 70px;
+  padding-left: 42px;
+  background-image: url('../../img/questions-background-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: 844px 455px;
+  background-position: 42px 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/questions-background-desktop@2x.jpg');
+  }
+
+  @media (max-width: $tablet-width) {
+    background-size: cover;
+    background-position: center 0;
+    background-color: $accent;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-color: $menu-item-background;
+    background-image: none;
+  }
+}
+
+.questions__block {
+  width: 656px;
+  box-sizing: border-box;
+  margin-left: auto;
+  padding: 50px;
+  text-align: center;
+  color: $true-dark;
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: 0px 4px 30px rgba($form-box-shadow, 0.1);
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.questions__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.questions__description {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 24px;
+}

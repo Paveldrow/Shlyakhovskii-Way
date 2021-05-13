@@ -3,6 +3,7 @@
 @import "global/global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/display-none.scss";
+@import "blocks/container.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -11,7 +12,12 @@
 @import "blocks/main-block.scss";
 @import "blocks/button.scss";
 @import "blocks/places.scss";
-@import "blocks/page-footer.scss";
 @import "blocks/next-trip.scss";
+@import "blocks/country-info.scss";
 @import "blocks/price.scss";
 @import "blocks/tariff.scss";
+@import "blocks/questions.scss";
+@import "blocks/form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/popup-buy.scss";
+@import "blocks/success-message.scss";
