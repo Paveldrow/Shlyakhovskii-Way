@@ -1,3 +1,13 @@
+.places {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
+  }
+}
+
 .places__title {
   position: relative;
   width: 358px;
@@ -22,6 +32,7 @@
 
   @media (max-width: $mobile-width) {
     width: auto;
+    margin-bottom: 15px;
     font-size: 24px;
   }
 
@@ -48,10 +59,15 @@
   color: rgba($dark, 0.7);
 
   @media (max-width: $tablet-width) {
-    width: auto;
+    width: 343px;
     margin: 0 auto;
     margin-bottom: 39px;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
+    width: auto;
   }
 }
 
@@ -67,6 +83,10 @@
     width: 706px;
     margin: 0 auto;
     justify-content: space-evenly;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 660px;
   }
 
   @media (max-width: $mobile-width) {
@@ -113,6 +133,14 @@
       margin-top: 12px;
       margin-right: auto;
       margin-left: auto;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 35px;
+
+    &:nth-child(5) {
+      margin-top: 0;
     }
   }
 

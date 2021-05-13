@@ -32,6 +32,10 @@
     padding-top: 15px;
     padding-bottom: 13px;
   }
+
+  @media (max-width: $mobile-width) {
+margin-left: 16px;
+  }
 }
 
 

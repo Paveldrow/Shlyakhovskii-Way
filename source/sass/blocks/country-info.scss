@@ -11,6 +11,27 @@
   }
 }
 
+.country-info__list-wrapper {
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 720px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 15px;
+  }
+}
+
+.country-info__list-scroll {
+  margin-bottom: -20px;
+  overflow-x: scroll;
+}
+
 .country-info__county-list {
   display: flex;
   width: max-content;
@@ -20,6 +41,15 @@
   padding-bottom: 14px;
   list-style: none;
   border-bottom: 1px solid rgba($dark, 0.3);
+  cursor: grab;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .country-info__county-item {
@@ -36,6 +66,11 @@
   line-height: 24px;
   letter-spacing: -0.4px;
   color: rgba($dark, 0.3);
+
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
 
   &--current {
     color: $accent;
@@ -76,6 +111,10 @@
     padding-bottom: 30px;
     text-align: center;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
 }
 
 .country-info__title {
@@ -109,6 +148,11 @@
     line-height: 45px;
     letter-spacing: normal;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .country-info__text {
@@ -137,7 +181,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 64px;
+    margin-bottom: 70px;
   }
 }
 
@@ -157,12 +201,15 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    padding-bottom: 1px;
   }
 
   @media (max-width: $mobile-width) {
     text-align: center;
     width: 268px;
     bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 34px;
   }
 }

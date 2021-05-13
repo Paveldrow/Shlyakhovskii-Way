@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-width) {
     min-height: 344px;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
     padding-top: 60px;
     background-image: url('../../img/background-main-tablet.jpg');
     background-size: cover;
@@ -29,7 +29,7 @@
   @media (max-width: $mobile-width) {
     display: flex;
     flex-wrap: wrap;
-    min-height: 455px;
+    min-height: 433px;
     padding-top: 81px;
     background-image: url('../../img/background-main-mobile.jpg');
     background-size: 100%;

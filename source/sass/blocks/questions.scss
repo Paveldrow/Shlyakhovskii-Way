@@ -13,12 +13,17 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    padding-left: 18px;
     background-size: cover;
     background-position: center 0;
     background-color: $accent;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 60px;
+    padding-top: 0;
     background-color: $menu-item-background;
     background-image: none;
   }
@@ -54,6 +59,10 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .questions__description {

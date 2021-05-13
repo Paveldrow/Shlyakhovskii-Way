@@ -5,6 +5,11 @@
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 124px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -13,11 +18,17 @@
   width: 299px;
   padding-top: 112px;
 
-
   @media (max-width: $tablet-width) {
     width: auto;
+    margin-bottom: 27px;
+    padding-top: 108px;
     text-align: center;
     order: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 35px;
+    margin-bottom: 38px;
   }
 }
 
@@ -44,12 +55,15 @@
   }
 
   @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 45px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 24px;
+    margin-bottom: 13px;
   }
 }
 
@@ -59,6 +73,14 @@
   font-size: 16px;
   line-height: 27px;
   color: rgba($dark, 0.7);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .price__contact-text {
@@ -69,6 +91,12 @@
   font-size: 22px;
   line-height: 34px;
   color: $true-dark;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
 }
 
 .price__contact {
@@ -81,6 +109,8 @@
   @media (max-width: $tablet-width) {
     justify-content: center;
     color: $accent;
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -101,11 +131,12 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    width: 100%;
+    width: 667px;
     justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
+    width: 288px;
     flex-direction: column;
   }
 }
@@ -115,5 +146,9 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
   }
 }

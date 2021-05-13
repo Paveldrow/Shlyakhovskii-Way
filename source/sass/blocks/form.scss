@@ -1,5 +1,4 @@
 .form {
-  position: relative;
   margin: 0;
   font-size: 12px;
   line-height: 15px;
@@ -15,6 +14,10 @@
     display: flex;
     flex-direction: column;
   }
+}
+.form__label {
+  position: relative;
+
 }
 
 .form__input {
@@ -42,9 +45,29 @@
     margin-right: 0;
   }
 
+  &:invalid {
+    border-color: $accent;
+    outline: hidden;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $dark;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+
   @media (max-width: $mobile-width) {
     width: 100%;
     margin-right: 0;
+    padding-left: 10px;
+  }
+
+  &:invalid ~ .form__invalid-message {
+    display: block;
   }
 }
 
@@ -52,18 +75,15 @@
   color: inherit;
 }
 
-.form__input-invalid {
-  border-color: $accent;
-}
-
 .form__invalid-message {
   position: absolute;
   display: none;
-  top: -16px;
-}
+  top: -35px;
+  left: 10px;
 
-.form__input-invalid ~ .form__invalid-message {
-  display: block;
+  @media (max-width: $mobile-width) {
+    top: -18px;
+  }
 }
 
 .form__button {

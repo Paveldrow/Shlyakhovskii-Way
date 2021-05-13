@@ -22,10 +22,15 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
+      autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([
+      csso()
+    ]))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -43,6 +48,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
+    .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
@@ -145,7 +151,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
     sprite,
     copy,
     images,
@@ -161,7 +167,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    // scripts,
+    scripts,
     sprite,
     copy,
     createWebp
