@@ -17,7 +17,8 @@
 }
 .form__label {
   position: relative;
-
+  width: 288px;
+  margin: 0 auto;
 }
 
 .form__input {
@@ -35,15 +36,11 @@
   border: 1px solid rgba($dark, 0.3);
 
   &--phone {
-    margin-right: 13px;
-    background-image: url('../../img/icon-required.svg');
+    background-image: url('../img/icon-required.svg');
     background-repeat: no-repeat;
     background-position: 15px 7px;
   }
 
-  &--modal {
-    margin-right: 0;
-  }
 
   &:invalid {
     border-color: $accent;
@@ -61,7 +58,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
+    width: 288px;
     margin-right: 0;
     padding-left: 10px;
   }

@@ -45,5 +45,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "gulp-uglify-es": "^2.0.0"
   }
 }

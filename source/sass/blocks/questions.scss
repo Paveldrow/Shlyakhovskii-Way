@@ -3,13 +3,13 @@
   margin-bottom: 89px;
   padding-top: 70px;
   padding-left: 42px;
-  background-image: url('../../img/questions-background-desktop.jpg');
+  background-image: url('../img/questions-background-desktop.jpg');
   background-repeat: no-repeat;
   background-size: 844px 455px;
   background-position: 42px 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/questions-background-desktop@2x.jpg');
+    background-image: url('../img/questions-background-desktop@2x.jpg');
   }
 
   @media (max-width: $tablet-width) {

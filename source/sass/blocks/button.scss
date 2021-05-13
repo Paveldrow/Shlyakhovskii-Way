@@ -24,8 +24,8 @@
     line-height: 12px;
   }
 
-  @media (max-width: $tablet-width) {
-    width: 100%;
+  @media (max-width: $mobile-width) {
+    width: 288px;
   }
 
   &:focus,
@@ -36,7 +36,7 @@
   &--main-block {
     justify-content: flex-start;
     width: 340px;
-    background-image: url('../../img/arrow-button.svg');
+    background-image: url('../img/arrow-button.svg');
     background-repeat: no-repeat;
     background-position: right 40px center;
 
